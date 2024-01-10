@@ -18,6 +18,18 @@ body {
     box-shadow: 0 0 20px 5px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p {
+    font-size: larger;
+    text-align: center;
+}
+
 .button-section {
     display: grid;
     gap: 15px;
