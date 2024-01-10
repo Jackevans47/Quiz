@@ -52,10 +52,24 @@ body {
     font-size: 40px;
     font-weight: bold;
     padding: 10px 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.start-button:hover {
+    border-color: white;
+}
+
+.next-button:hover {
+    border-color: white;
 }
 
 .control {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hide {
+    display: none;
 }
