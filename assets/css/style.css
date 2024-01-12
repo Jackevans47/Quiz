@@ -9,6 +9,13 @@ body {
     background-color: aqua;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .container {
     width: 600px;
     max-width: 80%;
@@ -16,13 +23,6 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 20px 5px;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 p {
