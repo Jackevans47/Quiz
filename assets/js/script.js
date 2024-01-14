@@ -8,6 +8,10 @@ const answerButtonsElement = document.getElementById('answers')
 let randomQuestions, questionIndex
 
 beginQuiz.addEventListener('click', startQuiz)
+nextButton.addEventListener('click', () => {
+    questionIndex++
+    nextQuestion()
+})
 
 // Start quiz function
 function startQuiz() {
@@ -60,6 +64,8 @@ function chooseAnswer(e) {
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
+        beginQuiz.innerText = 'Next'
+        beginQuiz.classList.remove('hide')
     })
 }
 
@@ -71,6 +77,7 @@ function setStatusClass(element, correct) {
         element.classList.add('button-incorrect')
     }
 }
+
 
 function clearStatusClass(element) {
     element.classList.remove('button-correct')
