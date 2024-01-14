@@ -50,6 +50,7 @@ function displayQuestion(question) {
 
 // Reset back to default state everytime a new question is set
 function resetState() {
+    clearStatusClass(document.body)
     console.log('reset')
     nextButton.style.display = 'none';
     while (answerButtonsElement.firstChild) {
