@@ -66,7 +66,12 @@ function chooseAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide')
+    if (randomQuestions.length > questionIndex + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        beginQuiz.innerText = 'Restart'
+        beginQuiz.classList.remove('hide')
+    }
 }
 
 
