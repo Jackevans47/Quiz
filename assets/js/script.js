@@ -9,6 +9,7 @@ let randomQuestions, questionIndex
 
 beginQuiz.addEventListener('click', startQuiz)
 
+// Start quiz function
 function startQuiz() {
     console.log('start')
     beginQuiz.classList.add('hide')
@@ -19,12 +20,16 @@ function startQuiz() {
     nextQuestion();
 }
 
+// Next Question function
 function nextQuestion() {
+    console.log('next-question')
     displayQuestion(randomQuestions[questionIndex])
-    resetAnswer()
+    //resetState()
 }
 
+// Display question function
 function displayQuestion(question) {
+    console.log('display-question')
     resetState();
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -39,17 +44,40 @@ function displayQuestion(question) {
     })
 }
 
-
-function chooseAnswer() {
-
-}
-
+// Reset back to default state everytime a new question is set
 function resetState() {
+    console.log('reset')
     nextButton.style.display = 'none';
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+// Choose answer function
+function chooseAnswer(e) {
+    console.log('choose-answer')
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+}
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('button-correct')
+    } else {
+        element.classList.add('button-incorrect')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('button-correct')
+    element.classList.remove('button-incorrect')
+}
+
+// List of questions and answers 
 const questions = [
     {
         question: "Which of these animals are considered to be mans best friend?",
