@@ -52,7 +52,7 @@ function displayQuestion(question) {
 function resetState() {
     clearStatusClass(document.body)
     console.log('reset')
-    nextButton.style.display = 'none';
+    nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -65,10 +65,10 @@ function chooseAnswer(e) {
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
-        beginQuiz.innerText = 'Next'
-        beginQuiz.classList.remove('hide')
     })
+    nextButton.classList.remove('hide')
 }
+
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
