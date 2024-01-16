@@ -27,8 +27,9 @@ function startQuiz() {
 // Next Question function
 function nextQuestion() {
     console.log('next-question')
+    resetState()
     displayQuestion(randomQuestions[questionIndex])
-    //resetState()
+
 }
 
 // Display question function
@@ -61,8 +62,14 @@ function resetState() {
 function chooseAnswer(e) {
     console.log('choose-answer')
     const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
+    const correct = selectedButton.dataset.correct;
     setStatusClass(document.body, correct)
+    Array.from(answerButtonsElement.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -73,7 +80,6 @@ function chooseAnswer(e) {
         beginQuiz.classList.remove('hide')
     }
 }
-
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
