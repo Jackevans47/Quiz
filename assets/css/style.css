@@ -42,8 +42,12 @@ p {
     border: 1px solid black;
 }
 
-.button:hover {
+.button:hover:not([disabled]) {
     border-color: white;
+}
+
+.button:disabled {
+    cursor: no-drop;
 }
 
 .button-correct {
