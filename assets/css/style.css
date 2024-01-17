@@ -85,6 +85,15 @@ p {
     align-items: center;
 }
 
+.points {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#points-num {
+    padding-left: 5px;
+}
+
 .hide {
     display: none;
 }
