@@ -8,7 +8,8 @@ const pointsElement = document.getElementById('points-num')
 const home = document.getElementById('home')
 
 
-let randomQuestions, questionIndex, points
+
+let randomQuestions, questionIndex, points, questionNum
 
 beginQuiz.addEventListener('click', startQuiz)
 home.addEventListener('click', returnHome)
@@ -35,6 +36,7 @@ function startQuiz() {
     questionholderElement.classList.remove('hide')
     randomQuestions = questions.sort(() => Math.random() - .5)
     questionIndex = 0
+    questionNum = 0
     setPoints(0)
     nextQuestion();
 }
@@ -51,7 +53,9 @@ function nextQuestion() {
 function displayQuestion(question) {
     console.log('display-question')
     resetState();
-    questionElement.innerText = question.question
+    questionNum++
+
+    questionElement.innerText = questionNum + ". " + question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
@@ -86,7 +90,6 @@ function chooseAnswer(e) {
     const correct = !!selectedButton.dataset.correct
     console.log(correct)
     if (correct) {
-        // points++
         setPoints(points + 1)
     }
 
