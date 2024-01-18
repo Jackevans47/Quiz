@@ -5,15 +5,27 @@ const welcomeMessage = document.getElementById('welcome')
 const questionElement = document.getElementById('questions')
 const answerButtonsElement = document.getElementById('answers')
 const pointsElement = document.getElementById('points-num')
+const home = document.getElementById('home')
 
 
 let randomQuestions, questionIndex, points
 
 beginQuiz.addEventListener('click', startQuiz)
+home.addEventListener('click', returnHome)
 nextButton.addEventListener('click', () => {
     questionIndex++
     nextQuestion()
 })
+
+// Return home function
+function returnHome() {
+    console.log("return home")
+    questionholderElement.classList.add('hide')
+    welcomeMessage.classList.remove('hide')
+    beginQuiz.innerText = 'Start'
+    beginQuiz.classList.remove('hide')
+}
+
 
 // Start quiz function
 function startQuiz() {
@@ -27,12 +39,12 @@ function startQuiz() {
     nextQuestion();
 }
 
+
 // Next Question function
 function nextQuestion() {
     console.log('next-question')
     resetState()
     displayQuestion(randomQuestions[questionIndex])
-
 }
 
 // Display question function
@@ -74,13 +86,11 @@ function chooseAnswer(e) {
     const correct = !!selectedButton.dataset.correct
     console.log(correct)
     if (correct) {
-        points++
-        setPoints(points)
+        // points++
+        setPoints(points + 1)
     }
 
-
     setStatusClass(document.body, correct)
-
 
     Array.from(answerButtonsElement.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -88,7 +98,6 @@ function chooseAnswer(e) {
         }
         button.disabled = true;
     });
-
 
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -114,7 +123,6 @@ function clearStatusClass(element) {
     element.classList.remove('button-correct')
     element.classList.remove('button-incorrect')
 }
-
 
 // List of questions and answers 
 const questions = [
