@@ -10,13 +10,19 @@ const answerButtonsElement = document.getElementById('answers')
 const pointsElement = document.getElementsByClassName('points-num')
 const questionTally = document.getElementById('current-question-number')
 const home = document.getElementById('home')
+const dialog = document.getElementById('dialog')
+const confirmElement = document.getElementById('confirm')
 const completionElement = document.getElementById('completion')
 const playAgain = document.getElementById('restart')
 
 let randomQuestions, questionIndex, points, questionNum
 
+
+home.addEventListener("click", () => {
+    dialog.showModal();
+});
 beginQuiz.addEventListener('click', startQuiz)
-home.addEventListener('click', returnHome)
+confirmElement.addEventListener('click', returnHome)
 nextButton.addEventListener('click', () => {
     console.log(questionIndex, randomQuestions.length)
     if (questionIndex == randomQuestions.length - 1) {
