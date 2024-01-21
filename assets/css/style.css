@@ -45,6 +45,7 @@ p {
   padding: 10px 5px;
   background-color: aqua;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .button:hover:not([disabled]) {
@@ -75,6 +76,7 @@ p {
   padding: 5px 5px;
   background-color: aliceblue;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .start-button,
@@ -84,6 +86,7 @@ p {
   padding: 10px 10px;
   background-color: aliceblue;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .start-button:hover {

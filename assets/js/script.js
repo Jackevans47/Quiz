@@ -18,7 +18,7 @@ nextButton.addEventListener('click', () => {
     nextQuestion()
 })
 
-// Return home function
+/** Return home function  */
 function returnHome() {
     console.log("return home")
     questionholderElement.classList.add('hide')
@@ -28,7 +28,7 @@ function returnHome() {
 }
 
 
-// Start quiz function
+/**  Start Quiz Function  */
 function startQuiz() {
     console.log('start')
     beginQuiz.classList.add('hide')
@@ -42,14 +42,14 @@ function startQuiz() {
 }
 
 
-// Next Question function
+/**   Next Question function */
 function nextQuestion() {
     console.log('next-question')
     resetState()
     displayQuestion(randomQuestions[questionIndex])
 }
 
-// Display question function
+/** Display question function */
 function displayQuestion(question) {
     console.log('display-question')
     resetState();
@@ -83,7 +83,7 @@ function setPoints(newPoints) {
     pointsElement.innerText = newPoints
 }
 
-// Choose answer function
+/**  Choose answer function */
 function chooseAnswer(e) {
     console.log('choose-answer')
     const selectedButton = e.target
@@ -113,18 +113,18 @@ function chooseAnswer(e) {
     }
 }
 
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
+function setStatusClass(value, correct) {
+    clearStatusClass(value)
     if (correct) {
-        element.classList.add('button-correct')
+        value.classList.add('button-correct')
     } else {
-        element.classList.add('button-incorrect')
+        value.classList.add('button-incorrect')
     }
 }
 
-function clearStatusClass(element) {
-    element.classList.remove('button-correct')
-    element.classList.remove('button-incorrect')
+function clearStatusClass(value) {
+    value.classList.remove('button-correct')
+    value.classList.remove('button-incorrect')
 }
 
 // List of questions and answers 
