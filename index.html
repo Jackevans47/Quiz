@@ -23,23 +23,23 @@
       <button id="home" class="home-btn">Home</button>
       <h1 id="questions">Question</h1>
       <div id="answers" class="button-section">
-        <button class="button">Answer 1</button>
-        <button class="button">Answer 2</button>
-        <button class="button">Answer 3</button>
-        <button class="button">Answer 4</button>
       </div>
       <!--Score-->
-      <div class="points">Points:<span id="points-num">0</span></div>
+      <div class="points">Points: <span class="points-num">0</span></div>
     </div>
     <!--Welcome message-->
     <div id="welcome">
       <h2> Welcome to the Quiz!</h2>
       <p>Press the start button to begin.</p>
     </div>
+    <div id="completion" class="hide">
+      <p>Congratulations! <br /> You have scored <span class="points-num">0</span> out of 10! </p>
+      <button id="restart" class="button">Play Again!</button>
+    </div>
     <!--Controls for start and next button-->
-    <div class="control">
-      <button id="start" class="start-button">Start</button>
-      <button id="next" class="next-button hide">Next</button>
+    <div class="flex-center">
+      <button id="start" class="button">Start</button>
+      <button id="next" class="button hide">Next</button>
     </div>
   </main>
   <footer></footer>

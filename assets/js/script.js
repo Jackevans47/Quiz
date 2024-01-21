@@ -1,6 +1,5 @@
 import questionData from './questions.json' assert { type: 'json' };
 
-
 /* jshint esversion: 6 */
 const beginQuiz = document.getElementById('start')
 const nextButton = document.getElementById('next')
@@ -8,31 +7,41 @@ const questionholderElement = document.getElementById('question-holder')
 const welcomeMessage = document.getElementById('welcome')
 const questionElement = document.getElementById('questions')
 const answerButtonsElement = document.getElementById('answers')
-const pointsElement = document.getElementById('points-num')
+const pointsElement = document.getElementsByClassName('points-num')
 const questionTally = document.getElementById('current-question-number')
 const home = document.getElementById('home')
-
-
+const completionElement = document.getElementById('completion')
+const playAgain = document.getElementById('restart')
 
 let randomQuestions, questionIndex, points, questionNum
 
 beginQuiz.addEventListener('click', startQuiz)
 home.addEventListener('click', returnHome)
 nextButton.addEventListener('click', () => {
-    questionIndex++
-    nextQuestion()
+    console.log(questionIndex, randomQuestions.length)
+    if (questionIndex == randomQuestions.length - 1) {
+        questionholderElement.classList.add('hide')
+        completionElement.classList.remove('hide')
+        completionElement.classList.add('flex-center')
+        resetState()
+    } else {
+        questionIndex++
+        nextQuestion()
+    }
+
 })
+playAgain.addEventListener('click', returnHome)
 
 /** Return home function  */
 function returnHome() {
     resetState();
     console.log("return home")
+    completionElement.classList.add('hide')
     questionholderElement.classList.add('hide')
     welcomeMessage.classList.remove('hide')
     beginQuiz.innerText = 'Start'
     beginQuiz.classList.remove('hide')
 }
-
 
 /**  Start Quiz Function  */
 function startQuiz() {
@@ -47,7 +56,6 @@ function startQuiz() {
     setPoints(0)
     nextQuestion();
 }
-
 
 /**   Next Question function */
 function nextQuestion() {
@@ -67,7 +75,7 @@ function displayQuestion(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
-        button.classList.add('button');
+        button.classList.add('answer-button');
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -86,11 +94,12 @@ function resetState() {
     }
 }
 
-
-
+/** Points */
 function setPoints(newPoints) {
     points = newPoints
-    pointsElement.innerText = newPoints
+    Array.from(pointsElement).forEach(pointElement => {
+        pointElement.innerText = points
+    });
 }
 
 /**  Choose answer function */
@@ -115,12 +124,7 @@ function chooseAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (randomQuestions.length > questionIndex + 1) {
-        nextButton.classList.remove('hide')
-    } else {
-        beginQuiz.innerText = 'Restart'
-        beginQuiz.classList.remove('hide')
-    }
+    nextButton.classList.remove('hide')
 }
 
 function setStatusClass(value, correct) {
@@ -136,4 +140,3 @@ function clearStatusClass(value) {
     value.classList.remove('button-correct')
     value.classList.remove('button-incorrect')
 }
-

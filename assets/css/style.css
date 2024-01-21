@@ -21,6 +21,13 @@ h2 {
   align-items: center;
 }
 
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 600px;
   max-width: 80%;
@@ -41,18 +48,18 @@ p {
   margin: 10px 0;
 }
 
-.button {
+.answer-button {
   padding: 10px 5px;
   background-color: aqua;
   border: 1px solid black;
   cursor: pointer;
 }
 
-.button:hover:not([disabled]) {
+.answer-button:hover:not([disabled]) {
   border-color: white;
 }
 
-.button:disabled {
+.answer-button:disabled {
   cursor: no-drop;
 }
 
@@ -74,33 +81,22 @@ p {
   font-size: 30px;
   font-weight: bold;
   padding: 5px 5px;
-  background-color: aliceblue;
+  background-color: whitesmoke;
   border: 1px solid black;
   cursor: pointer;
 }
 
-.start-button,
-.next-button {
+.button {
   font-size: 40px;
   font-weight: bold;
   padding: 10px 10px;
-  background-color: aliceblue;
+  background-color: whitesmoke;
   border: 1px solid black;
   cursor: pointer;
 }
 
-.start-button:hover {
+.button:hover {
   border-color: white;
-}
-
-.next-button:hover {
-  border-color: white;
-}
-
-.control {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .points {
