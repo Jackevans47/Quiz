@@ -1,0 +1,67 @@
+{
+    "questions": [
+        {
+            "question": "Which of these animals are considered to be mans best friend?",
+            "answers": [
+                {
+                    "text": "Cat",
+                    "correct": false
+                },
+                {
+                    "text": "Dog",
+                    "correct": true
+                },
+                {
+                    "text": "Hamster",
+                    "correct": false
+                },
+                {
+                    "text": "Bird",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is 5 x 2?",
+            "answers": [
+                {
+                    "text": "15",
+                    "correct": false
+                },
+                {
+                    "text": "10",
+                    "correct": true
+                },
+                {
+                    "text": "25",
+                    "correct": false
+                },
+                {
+                    "text": "30",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What is 4 x 2?",
+            "answers": [
+                {
+                    "text": "6",
+                    "correct": false
+                },
+                {
+                    "text": "8",
+                    "correct": true
+                },
+                {
+                    "text": "16",
+                    "correct": false
+                },
+                {
+                    "text": "10",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

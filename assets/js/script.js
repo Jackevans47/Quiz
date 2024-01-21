@@ -1,3 +1,6 @@
+import questionData from './questions.json' assert { type: 'json' };
+
+
 /* jshint esversion: 6 */
 const beginQuiz = document.getElementById('start')
 const nextButton = document.getElementById('next')
@@ -33,11 +36,12 @@ function returnHome() {
 
 /**  Start Quiz Function  */
 function startQuiz() {
+    console.log(questions)
     console.log('start')
     beginQuiz.classList.add('hide')
     welcomeMessage.classList.add('hide')
     questionholderElement.classList.remove('hide')
-    randomQuestions = questions.sort(() => Math.random() - .5)
+    randomQuestions = questionData["questions"].sort(() => Math.random() - .5)
     questionIndex = 0
     questionNum = 0
     setPoints(0)
@@ -58,7 +62,7 @@ function displayQuestion(question) {
     resetState();
     questionNum++
 
-    questionTally.innerText = questionNum + " "
+    questionTally.innerText = questionNum
     questionElement.innerText = questionNum + ". " + question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -133,31 +137,3 @@ function clearStatusClass(value) {
     value.classList.remove('button-incorrect')
 }
 
-// List of questions and answers 
-const questions = [
-    {
-        question: "Which of these animals are considered to be mans best friend?",
-        answers: [
-            { text: 'Cat', correct: false },
-            { text: 'Dog', correct: true },
-            { text: 'Hamster', correct: false },
-            { text: 'Bird', correct: false },
-        ]
-    },
-    {
-        question: "What is 5 x 2?",
-        answers: [
-            { text: "15", correct: false },
-            { text: "10", correct: true },
-            { text: "25", correct: false },
-            { text: "30", correct: false },
-        ]
-    },
-    {
-        question: 'What is 4 * 2?',
-        answers: [
-            { text: '6', correct: false },
-            { text: '8', correct: true }
-        ]
-    }
-]
