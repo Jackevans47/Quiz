@@ -11,7 +11,14 @@
 </head>
 
 <body>
+  <!--Question container-->
   <main class="container">
+    <!--Question total-->
+    <div class="question-total">
+      <span id="current-question-number">0</span>
+      / 10
+    </div>
+    <!--Question and answer buttons-->
     <div id="question-holder" class="hide">
       <button id="home" class="home-btn">Home</button>
       <h1 id="questions">Question</h1>
@@ -21,12 +28,15 @@
         <button class="button">Answer 3</button>
         <button class="button">Answer 4</button>
       </div>
+      <!--Score-->
       <div class="points">Points:<span id="points-num">0</span></div>
     </div>
+    <!--Welcome message-->
     <div id="welcome">
       <h2> Welcome to the Quiz!</h2>
       <p>Press the start button to begin.</p>
     </div>
+    <!--Controls for start and next button-->
     <div class="control">
       <button id="start" class="start-button">Start</button>
       <button id="next" class="next-button hide">Next</button>

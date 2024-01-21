@@ -112,6 +112,15 @@ p {
   padding-left: 5px;
 }
 
+.question-total {
+  display: flex;
+  justify-content: right;
+}
+
 .hide {
   display: none;
+}
+
+#current-question-number {
+  margin-right: 7px;
 }

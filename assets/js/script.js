@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 const beginQuiz = document.getElementById('start')
 const nextButton = document.getElementById('next')
 const questionholderElement = document.getElementById('question-holder')
@@ -5,6 +6,7 @@ const welcomeMessage = document.getElementById('welcome')
 const questionElement = document.getElementById('questions')
 const answerButtonsElement = document.getElementById('answers')
 const pointsElement = document.getElementById('points-num')
+const questionTally = document.getElementById('current-question-number')
 const home = document.getElementById('home')
 
 
@@ -20,6 +22,7 @@ nextButton.addEventListener('click', () => {
 
 /** Return home function  */
 function returnHome() {
+    resetState();
     console.log("return home")
     questionholderElement.classList.add('hide')
     welcomeMessage.classList.remove('hide')
@@ -55,6 +58,7 @@ function displayQuestion(question) {
     resetState();
     questionNum++
 
+    questionTally.innerText = questionNum + " "
     questionElement.innerText = questionNum + ". " + question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button');
@@ -77,6 +81,8 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+
+
 
 function setPoints(newPoints) {
     points = newPoints
