@@ -70,7 +70,7 @@ p {
 }
 
 .button-incorrect {
-  background-color: red;
+  background-color: rgb(238, 106, 106);
   padding: 10px 5px;
   border: 1px solid black;
 }
