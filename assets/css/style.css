@@ -6,7 +6,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
+  background-color: rgb(46, 197, 197);
 }
 
 h1 {
@@ -50,7 +50,7 @@ p {
 
 .answer-button {
   padding: 10px 5px;
-  background-color: aqua;
+  background-color: rgb(25, 211, 211);
   border: 1px solid black;
   cursor: pointer;
 }
