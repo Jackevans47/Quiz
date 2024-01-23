@@ -18,10 +18,10 @@ const playAgain = document.getElementById('restart');
 
 let randomQuestions, questionIndex, points, questionNum;
 
-
 home.addEventListener("click", () => {
     dialog.showModal();
 });
+
 beginQuiz.addEventListener('click', startQuiz);
 confirmElement.addEventListener('click', returnHome);
 nextButton.addEventListener('click', () => {
@@ -84,7 +84,7 @@ function displayQuestion(question) {
     });
 }
 
-// Reset back to default state everytime a new question is set
+/** Reset back to default state everytime a new question is set */
 function resetState() {
     clearStatusClass(document.body);
     nextButton.classList.add('hide');
@@ -93,7 +93,7 @@ function resetState() {
     }
 }
 
-/** Points */
+/** Points function */
 function setPoints(newPoints) {
     points = newPoints;
     Array.from(pointsElement).forEach(pointElement => {
@@ -111,6 +111,7 @@ function chooseAnswer(e) {
 
     setStatusClass(document.body, correct);
 
+    // Array to determain if answer is correct
     Array.from(answerButtonsElement.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
@@ -118,12 +119,14 @@ function chooseAnswer(e) {
         button.disabled = true;
     });
 
+    // Array to remove hide class on next button when answer has been chosen
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     });
     nextButton.classList.remove('hide');
 }
 
+/** Adds color to buttons when correct or incorrect answer is selected */
 function setStatusClass(value, correct) {
     clearStatusClass(value);
     if (correct) {
@@ -133,6 +136,7 @@ function setStatusClass(value, correct) {
     }
 }
 
+/** Resets background colour */
 function clearStatusClass(value) {
     value.classList.remove('button-correct');
     value.classList.remove('button-incorrect');
