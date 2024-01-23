@@ -1,5 +1,5 @@
-/* jshint esversion: 6 */
-import questionData from './questions.json' assert { type: 'json' };
+/* jshint esversion: 11 */
+import questionData from './questions.json' assert { type: 'json' }; // jshint ignore:line
 
 
 const beginQuiz = document.getElementById('start');
@@ -53,7 +53,7 @@ function startQuiz() {
     beginQuiz.classList.add('hide');
     welcomeMessage.classList.add('hide');
     questionholderElement.classList.remove('hide');
-    randomQuestions = questionData["questions"].sort(() => Math.random() - .5);
+    randomQuestions = questionData.questions.sort(() => Math.random() - .5);
     questionIndex = 0;
     questionNum = 0;
     setPoints(0);
