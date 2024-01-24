@@ -48,3 +48,20 @@ In order to test the quiz for correct appearance, reponsivness and functionality
 | GitHub icon | Click on the "icon" | The user is redirected to my github page | Yes | Yes | - |
 | Play again | Click the "play again" icon | The user is returned to the start page | Yes | Yes | |
 
+
+---
+## Validator testing
++ ### HTML
+   - No errors or warnings found when passing throught the offical W3C validator
+     
+![W3C validator HTML](https://github.com/Jackevans47/Quiz/assets/148341732/3ec2ee14-4cda-449c-ac68-613020130b44)
+
++ ### CSS
+   - No errors or warnings found when passing throught the offical W3C validator
+ 
+     ![W3C validator CSS](https://github.com/Jackevans47/Quiz/assets/148341732/54772e43-e114-44c4-ae98-4150223f26d2)
+
++ ### JShint
+  - JS hint is not prepared to evaluate import statement in js, however i have tested it on different browsers and the code is still functional. so i have ignored the warnings.
+   
+![Screenshot 2024-01-24 at 19 27 51](https://github.com/Jackevans47/Quiz/assets/148341732/bea68bfd-f1b4-4197-8efe-4100bc7ad528)
