@@ -30,3 +30,21 @@ In order to test the quiz for correct appearance, reponsivness and functionality
    
       ![responsive screen](https://github.com/Jackevans47/Quiz/assets/148341732/9c580fd0-8b1c-4b36-9d8f-72e75e2d5830)
 
+
+## Manual testing
+
+| feature | action | expected result | tested | passed | comments |
+| --- | --- | --- | --- | --- | --- |
+| Home | Click on the "Home" button| The user is shown a message asking for confirmation| Yes | Yes | - |
+| Yes | Click on the "Yes" button | The user is redirected to the the start page | Yes | Yes | 
+| No | Click on the "No" button | The user remains on the quiz page| Yes | Yes | 
+| Start | Click on the "Start" button | The user is redirected to the first question | Yes | Yes | - |
+| Answer buttons | Click on the "Answer button" | The user has selected the answer | Yes | Yes | - |
+| Correct answer| Click on the "Answer button | If correct, the answer and background will be green | Yes | Yes | - |
+| Incorrect answer | Click on the "Answer button| If incorrect, the answer and background will be red| Yes | Yes | - |
+| Next| Click on the "Next" button| The next question is presented to the user | Yes | Yes | - |
+| Points | Shows the users score| The points increase with every correct answer | Yes | Yes | - |
+| Question tally | Increases by one for every question | Displays the question total and what question the user is on  | Yes | Yes | - |
+| GitHub icon | Click on the "icon" | The user is redirected to my github page | Yes | Yes | - |
+| Play again | Click the "play again" icon | The user is returned to the start page | Yes | Yes | |
+
