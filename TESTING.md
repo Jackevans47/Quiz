@@ -68,6 +68,6 @@ In order to test the quiz for correct appearance, reponsivness and functionality
 
 
 + ## Lighthouse report
-   - Using lighthouse in devtools, I confirmed that the website accessible, performs well and all design choices allow the text to be readable.
+   - Using lighthouse in devtools, I confirmed that the quiz accessible, performs well and all design choices allow the text to be readable.
 
      ![lighthouse report](https://github.com/Jackevans47/Quiz/assets/148341732/c576591f-f316-48f4-b2b6-0f157a3df399)
