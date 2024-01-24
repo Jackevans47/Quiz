@@ -158,5 +158,7 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
 
 ---
  
+### Miro
+Miro was used to design the logic and flow of how the quiz would function.
 
-
+<img width="1106" alt="Screenshot 2024-01-24 at 17 31 16" src="https://github.com/Jackevans47/Quiz/assets/148341732/f60dced4-3645-4af5-985d-e09070ad6168">
