@@ -97,3 +97,12 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
      ![question tally](https://github.com/Jackevans47/Quiz/assets/148341732/cf1da464-c4b1-4682-ba07-58e146d531c5)
 
 ---
++ ### Play Again
+  When the quiz has reached the end, the user is presented with the play again page.
+
+  This shows the following:
+  - A congratulations message.
+  - The score the user has scored by the end of the quiz.
+  - A play again button that sends the user back to the start quiz page.
+ 
+    ![play again](https://github.com/Jackevans47/Quiz/assets/148341732/bd2729c4-e7fb-4396-8980-3b311833d857)
