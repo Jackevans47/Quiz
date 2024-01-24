@@ -72,14 +72,12 @@ p {
 }
 
 .button-correct {
-  background-color: lightgreen;
-  /* padding: 10px 10px; */
+  background-color: rgb(144, 238, 153);
   border: 1px solid black;
 }
 
 .button-incorrect {
   background-color: rgb(238, 106, 106);
-  /* padding: 10px 5px; */
   border: 1px solid black;
 }
 
