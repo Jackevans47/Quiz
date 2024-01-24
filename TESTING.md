@@ -79,5 +79,7 @@ In order to test the quiz for correct appearance, reponsivness and functionality
 1. Encountered issue where i originally tried to impliment a restart button at the end by renaiming the start quiz function, it would take  me back to the first question instead of the welcome page. This was respolved by creating a Play again button instead that would return to the start page.
 
 2. Encountered issue allowing users to continue to select other potions after selecting their answer. This was resolved by implementing  button.disabled = true; inside the array that determines which answer is true.
+
+   
 + ### Unsolved bugs
   - None.
