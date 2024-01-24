@@ -117,3 +117,11 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
   - A no button that when clicked with keep the user on the same page to resume thier quiz.
  
     ![confirm](https://github.com/Jackevans47/Quiz/assets/148341732/79a311fa-ef9f-4ea4-9fda-2e014e10cd72)
+
+---
++ ### Footer
+   The footer is present on all pages and displays an icon that when clicked will take the user to my github page.
+
+  ![github link](https://github.com/Jackevans47/Quiz/assets/148341732/d244d51e-7c8f-4b16-8290-d23f4835496f)
+
+---
