@@ -106,3 +106,14 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
   - A play again button that sends the user back to the start quiz page.
  
     ![play again](https://github.com/Jackevans47/Quiz/assets/148341732/bd2729c4-e7fb-4396-8980-3b311833d857)
+
+---
++ ### Confirmation
+  This quiz also contains a confirmation page when the home button is selected which contains the following:
+
+  - A home button that activates the pop up.
+  - A message asking the user if they are sure they want to return to the home page.
+  - A yes button that when clicked will return the user back to the start quiz page reseting this progress and score.
+  - A no button that when clicked with keep the user on the same page to resume thier quiz.
+ 
+    ![confirm](https://github.com/Jackevans47/Quiz/assets/148341732/79a311fa-ef9f-4ea4-9fda-2e014e10cd72)
