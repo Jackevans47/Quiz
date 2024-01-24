@@ -173,3 +173,26 @@ Miro was used to design the logic and flow of how the quiz would function.
 Please refer to [TESTING.md](TESTING.md) for all testing documentation.
 
 ---
+
+
+## Deployment
+
+ Deployment to GitHub pages
+
+ - The site was deployed to GitHub pages. The steps are as follows:
+ - 
+    - In the [GitHub repository](https://github.com/Jackevans47/Quiz), go to the settings tab
+    - Choose pages on side navigation bar.
+    - From the source section drop-down menu, select the **Main** Branch, then click Save.
+    - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+    - The live link can be found [here](https://jackevans47.github.io/Quiz/)
+  
+      ### Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone my repository:
+
+- `git clone https://jackevans47.github.io/Quiz/`
+
+  ---
