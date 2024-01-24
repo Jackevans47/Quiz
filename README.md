@@ -56,5 +56,26 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
  
  ![question before answer](https://github.com/Jackevans47/Quiz/assets/148341732/7aa44a69-7e3a-4fb1-9497-8c5b914278d2)
 
+
+---
++ ### Choosing Answer Function
+
++ #### Correct Answer
+   - When the correct answer is selected, the background changes to green.
+   - The correct answer button highlights green showing the user the correct answer.
+   - All other answer buttons display red showing the user the incorrect answers.
+   - The next button then becomes visible showing the user that they can continue to the next question.
+   - All answer buttons become disabled when an answer is selected to stop the user from changing their answer once it has been selected.
+   - Once a correct answer has been selected, a point is added to the score. 
      
+  ![correct answer](https://github.com/Jackevans47/Quiz/assets/148341732/6277189b-eee1-486a-8df0-a3baf98cc068)
+
++ #### Incorrect Answer
+  - When the incorrect answer is selected, the background changes to red.
+   - The incorrect answer button highlights red showing the user the incorrect answer.
+   - Once an answer is selected, all incorrect answers are displayed red and the remaining correct answer is displayed green.
+ - The next button then becomes visible showing the user that they can continue to the next question.
+ -  - All answer buttons become disabled when an answer is selected to stop the user from changing their answer once it has been selected.
+    - If an incorrect answer is selected, the points will not increase.
   
+  ![incorrect answer](https://github.com/Jackevans47/Quiz/assets/148341732/7bcee0a0-8c85-442e-bea7-ce65335fa34c)
