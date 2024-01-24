@@ -126,3 +126,14 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
   ![github link](https://github.com/Jackevans47/Quiz/assets/148341732/d244d51e-7c8f-4b16-8290-d23f4835496f)
 
 ---
+## Technology Used
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages. 
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [Miro](https://miro.com/) was used to design the logic of the quiz.
+- [JShint](https://jshint.com/) was used to validate and find errors in the JS code.
+
+---
