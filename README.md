@@ -136,4 +136,27 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
 - [Miro](https://miro.com/) was used to design the logic of the quiz.
 - [JShint](https://jshint.com/) was used to validate and find errors in the JS code.
 
+
 ---
+## Design
+
+### Colour Scheme
+![Screenshot 2024-01-24 at 17 40 06](https://github.com/Jackevans47/Quiz/assets/148341732/b41b0ebd-1a0a-4e9f-859c-e7637d4b5b8d)
+- Blue #2EC5C5 was used as the default background colour.
+
+  ![Screenshot 2024-01-24 at 17 40 59](https://github.com/Jackevans47/Quiz/assets/148341732/2289d77a-bec8-4678-82b7-897d77f66c12)
+  - White #FFFFFF was used for the header, footer, and container background.
+ 
+ ![Screenshot 2024-01-24 at 17 41 44](https://github.com/Jackevans47/Quiz/assets/148341732/426ef314-6685-4f23-abd7-3047336e4182)
+  - Blue #19D3D3 was used for the answer buttons before they were selected.
+
+    ![Screenshot 2024-01-24 at 17 42 58](https://github.com/Jackevans47/Quiz/assets/148341732/1b0ba819-7785-4572-8932-92f7c07353a9)
+- Green #90EE90 was used for the correct answer button and the background would change to this when correct.
+
+  ![Screenshot 2024-01-24 at 17 43 24](https://github.com/Jackevans47/Quiz/assets/148341732/3d62057d-c854-41b1-938d-470bee3237ef)
+  - Red #EE6A6A was used for the incorrect answer button and the background would change to this when incorrect.
+
+---
+ 
+
+
