@@ -65,3 +65,9 @@ In order to test the quiz for correct appearance, reponsivness and functionality
   - JS hint is not prepared to evaluate import statement in js, however i have tested it on different browsers and the code is still functional. so i have ignored the warnings.
    
 ![Screenshot 2024-01-24 at 19 27 51](https://github.com/Jackevans47/Quiz/assets/148341732/bea68bfd-f1b4-4197-8efe-4100bc7ad528)
+
+
++ ## Lighthouse report
+   - Using lighthouse in devtools, I confirmed that the website accessible, performs well and all design choices allow the text to be readable.
+
+     ![lighthouse report](https://github.com/Jackevans47/Quiz/assets/148341732/c576591f-f316-48f4-b2b6-0f157a3df399)
