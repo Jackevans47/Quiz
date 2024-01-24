@@ -204,3 +204,22 @@ In your IDE Terminal, type the following command to clone my repository:
 - add multiple choice questions.
 
   ---
+
+## Credits
+
++ #### Media
+  
+   + Icons used from [Font awesome](https://fontawesome.com/)
+     
+---
+
+## Acknowledgments
+
+- [Code Institute](https://codeinstitute.net/) tutors and Slack community members for their support and help.
+
+I used the folllowing youtube tutorials as inspiration while working on my project.
+
+- [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&list=PLZlA0Gpn_vH_XnZHin-Vjma8KylU-N0X8&index=2)
+- [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1105s)
+
+  ---
