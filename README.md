@@ -196,3 +196,11 @@ In your IDE Terminal, type the following command to clone my repository:
 - `git clone https://jackevans47.github.io/Quiz/`
 
   ---
+
+## Future improvments 
+- add favicon
+- add scoreboard to see previous best scores.
+- add more questions.
+- add multiple choice questions.
+
+  ---
