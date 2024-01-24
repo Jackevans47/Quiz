@@ -79,3 +79,21 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
     - If an incorrect answer is selected, the points will not increase.
   
   ![incorrect answer](https://github.com/Jackevans47/Quiz/assets/148341732/7bcee0a0-8c85-442e-bea7-ce65335fa34c)
+
+---
++ ### Tally Functions
+
++ #### Points System
+  - Points are displayed showing the user how many correct questions they have answered.
+  - Points will only increase if a question is answered correctly.
+
+![points](https://github.com/Jackevans47/Quiz/assets/148341732/065abdbf-d099-4468-869d-e0f3e5b95a0f)
+
+ 
++ #### Question Tally
+   - A question tally is displayed showing the user what question they are on and how many questions the quiz contains.
+   - This feature will increase by 1 for every question.
+ 
+     ![question tally](https://github.com/Jackevans47/Quiz/assets/148341732/cf1da464-c4b1-4682-ba07-58e146d531c5)
+
+---
