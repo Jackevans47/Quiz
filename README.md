@@ -132,10 +132,15 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
 - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items simmetrically on the pages. 
 - [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
 - [Git](https://git-scm.com/) was used for the version control of the website.
-- [GitHub](https://github.com/) was used to host the code of the website.
+- [GitHub](https://github.com/) was used for keeping my code.
+- [GitHub Pages](https://github.com/Jackevans47/Quiz/deployments/github-pages
+)  was used to host the code of the website.
 - [Miro](https://miro.com/) was used to design the logic of the quiz.
 - [JShint](https://jshint.com/) was used to validate and find errors in the JS code.
 - [JS](https://www.w3schools.com/js/) - was used to add interactivity to the site.
+- https://github.com/Jackevans47/Quiz/deployments/github-pages
+
+
 
 
 ---
