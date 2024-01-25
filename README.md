@@ -216,6 +216,10 @@ In your IDE Terminal, type the following command to clone my repository:
 + #### Media
   
    + Icons used from [Font awesome](https://fontawesome.com/)
+ 
+   + [Mentimeter](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#general-knowledge) I used a mixture of my own questions and questions from Mentimeter for the quiz.
+
+   
      
 ---
 
