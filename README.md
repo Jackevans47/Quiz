@@ -138,7 +138,7 @@ The quiz can be accessed here using this link [here](https://jackevans47.github.
 - [Miro](https://miro.com/) was used to design the logic of the quiz.
 - [JShint](https://jshint.com/) was used to validate and find errors in the JS code.
 - [JS](https://www.w3schools.com/js/) - was used to add interactivity to the site.
-- https://github.com/Jackevans47/Quiz/deployments/github-pages
+
 
 
 
