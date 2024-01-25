@@ -226,6 +226,11 @@ In your IDE Terminal, type the following command to clone my repository:
 I used the folllowing youtube tutorials as inspiration while working on my project.
 
 - [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&list=PLZlA0Gpn_vH_XnZHin-Vjma8KylU-N0X8&index=2)
+
+  - I used this tutorial as inspiation and to help structure my project.
+    
 - [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1105s)
+
+  - I used this tutorial to help me disable answers when selected to avoid cheating in the quiz.
 
   ---
